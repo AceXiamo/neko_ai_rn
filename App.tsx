@@ -1,10 +1,9 @@
-import HomePage from './pages/home';
-import MyPage from './pages/my';
+import HomePage from '@/pages/home';
+import MyPage from '@/pages/my';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Iconify } from 'react-native-iconify';
 import { useFonts } from 'expo-font';
-import { View } from "react-native";
 
 const Tab = createBottomTabNavigator();
 
