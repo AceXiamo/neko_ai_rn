@@ -3,10 +3,20 @@ import MyPage from './pages/my';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Iconify } from 'react-native-iconify';
+import { useFonts } from 'expo-font';
+import { View } from "react-native";
 
 const Tab = createBottomTabNavigator();
 
 export default function App() {
+  const [fontsLoaded, error] = useFonts({
+    'TsukuARdGothicStd-D': require('./assets/fonts/TsukuARdGothicStd-D.ttf'),
+  });
+
+  if (!fontsLoaded) {
+    return null;
+  }
+
   return (
     <NavigationContainer>
       <Tabs/>
