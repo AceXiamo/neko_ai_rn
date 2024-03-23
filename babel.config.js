@@ -3,7 +3,16 @@ module.exports = function(api) {
   return {
     presets: ['babel-preset-expo'],
     plugins: [
-      'react-native-iconify/plugin'
+      'react-native-iconify/plugin',
+      [
+        'module-resolver',
+        {
+          root: ['.'],
+          alias: {
+            '@': '.',
+          },
+        },
+      ],
     ],
   };
 };
