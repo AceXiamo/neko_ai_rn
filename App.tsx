@@ -1,20 +1,21 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Button, StyleSheet, Text, View } from 'react-native';
+import HomePage from './pages/home';
+import SettingsPage from './pages/settings';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    // <NavigationContainer>
+      <Text>123123</Text>
+    // </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+// function Tabs() {
+//   return (
+//     <Tab.Navigator>
+//       <Tab.Screen name="Home" component={HomePage}/>
+//       <Tab.Screen name="Settings" component={SettingsPage}/>
+//     </Tab.Navigator>
+//   )
+// }
