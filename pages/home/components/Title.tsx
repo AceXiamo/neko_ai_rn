@@ -4,7 +4,7 @@ export default function Title() {
   return (
     <View style={styles.titleContainer}>
       <Text>🐱</Text>
-      <Text style={{ color: 'white', fontSize: 15, fontFamily: 'TsukuARdGothicStd-D' }}>Neko 记账</Text>
+      <Text style={{ color: 'white', fontSize: 15, fontFamily: 'TsukuARdGothicStd-D' }}>The title.</Text>
     </View>
   );
 }
